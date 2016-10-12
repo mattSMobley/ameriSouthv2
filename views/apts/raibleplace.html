@@ -1,0 +1,89 @@
+<center>
+<br><br><br><br>
+  <div class="cd-color-gray">
+  <h1 class="apt-name">
+    Raible Place
+  </h1>
+  <div class="slideshow">
+    <div class="bss-slides" tabindex="1" autofocus="autofocus">
+      <figure>
+        <img src="img/Raible Place - 1.jpg" width="100%" />
+        <figcaption>Raible Place</figcaption>
+      </figure>
+      <figure>
+        <img src="img/Raible Place - 2.jpg" width="100%" />
+        <figcaption>Raible Place Entrance</figcaption>
+      </figure>
+      <figure>
+        <img src="img/Raible Place - 3.jpg" width="100%" />
+        <figcaption>Raible Place Office</figcaption>
+      </figure>
+
+    </div>
+    <!-- // bss-slides -->
+  </div>
+<br><br><br><br>
+</div>
+
+
+<br><br><br><br>
+<div class="cd-color-yellow">
+<br><br>
+<h1> Location </h1>
+<div class="row">
+  <div class="column-2">
+  </div>
+  <div class="column-5">
+    <ng-map zoom="12" default-style="false" center="[32.8263606,-96.9444135]">
+      <marker position="[32.8263606,-96.9444135]" />
+      <control name="overviewMap" opened="true" />
+    </ng-map>
+  </div>
+  <div class="column-4 apt-info">
+    <p>1216 N. Britain Road</p>
+    <p>Irving, Texas 75061</p>
+    <p>Phone: (972) 438-1555</p>
+    <p>Fax: (972) 554-0315</p>
+  </div>
+  <div class="column-1">
+  </div>
+</div>
+<br><br><br><br>
+</div>
+
+<br><br><br><br>
+<div class="cd-color-purple">
+<br><br>
+<h1> Floorplans </h1>
+<!-- MAYBE TRY A TABLE HERE -->
+  <div class="floorplans">
+    <div class="row">
+      <img src="img/floorplans/Raible Place - 1.jpg">
+      <br>
+      <p><b>1 Bedroom / 1 Bathroom</b> - 653 sq ft.</p>
+      <img src="img/floorplans/Raible Place - 2.jpg">
+      <br>
+      <p><b>2 Bedroom / 2 Bathroom</b> - 853 sq ft.</p>
+    </div>
+    <div class="row">
+      <img src="img/floorplans/Raible Place - 3.jpg">
+      <br>
+      <p><b>3 Bedroom / 2 Bathroom</b> - 1032 sq ft.</p>
+    </div>
+    <br><br><br><br>
+  </div>
+</div>
+<br><br><br><br>
+</div>
+<br><br><br><br>
+
+
+<script>
+var opts = {
+  auto: {
+    speed: 3500,
+    pauseOnHover: true
+  }
+};
+makeBSS('.bss-slides', opts);
+</script>
