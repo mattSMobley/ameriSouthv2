@@ -61,11 +61,11 @@ main {
   }
 }
 .cd-fixed-bg.cd-bg-1 {
-  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url(../img/features/skyline45.jpg);
 }
 .news {
   text-align: center;
-  padding: 6em 0em;
+  padding: 6em 0;
   color: white;
   p {
     font-size: 2.5em;
@@ -90,21 +90,22 @@ main {
   }
 }
 .comment {
+  text-align: center;
+  padding: 3em;
+  color: $primary;
+  p {
     text-align: center;
-    padding: 6em 0em;
+    font-size: 2.5em;
     color: $primary;
-    p {
-      font-size: 2.5em;
-      color: $primary;
-    }
-    h3 {
-      margin-top: 3em;
-      margin-bottom: 1em;
-      color: #bbb;
-      padding: 0em 8em;
-    }
+    padding: 1em 8em 0;
   }
-
+  h3 {
+    text-align: center;
+    margin-top: 1em;
+    color: #bbb;
+    padding: 0 8em;
+  }
+}
 @media only screen and (max-width: 600px) {
   .cd-fixed-bg {
     max-height: 450px;
@@ -174,11 +175,13 @@ main {
 #sub-title {
   padding-left: 20%;
   padding-right: 20%;
-  font-size: 1em;
+  font-size: 1.6em;
   line-height: 2;
   text-shadow: 1px 1px $primary;
-  font-family: 'Gill Sans';
+  font-family: "Gill Sans";
+  font-weight: 100;
   color: $base;
+  text-transform: none;
 }
 @media only screen and (max-width: 500px) {
   #sub-title {
@@ -242,7 +245,6 @@ main {
 }
 .cd-color-gray {
   background-color: $base;
-
   img {
     width: 80%;
     height: auto;
@@ -407,17 +409,6 @@ figcaption {
     }
   }
 }
-// .main-boxes {
-//   top: -100;
-//   .box {
-//     background-color: rgba(0,0,0,.8);
-//     border: 2px white;
-//     margin: 1em;
-//     width: 4em;
-//     height: 4em;
-//     display: inline-flex;
-//   }
-// }
 //WELP, heres how to do it. now make it your own(&better)
 .main-boxes {
   width: 100%;
@@ -472,7 +463,6 @@ figcaption {
   color: lighten($accent, 40%);
   border: white 1px solid;
 }
-
 .main-boxes .box-1:hover .widget-title,
 .main-boxes .box-2:hover .widget-title,
 .main-boxes .box-3:hover .widget-title,
@@ -573,7 +563,6 @@ figcaption {
   font-size: 0.875em;
   font-family: "Verdana";
 }
-
 @media only screen and (min-width: 47.5em) {
   .main-boxes .widget .widget-content p {
     font-size: 0.75em;
@@ -584,7 +573,14 @@ figcaption {
     font-size: 0.8125em;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .main-boxes {
 
+    [class*='box-'] {
+      width: 40%;
+    }
+  }
+}
 .boxes-section {
   width: 100%;
   margin-left: 7rem;
@@ -592,7 +588,6 @@ figcaption {
   position: relative;
   top: -61px;
 }
-
 .boxes-section:before,
 .boxes-section:after {
   content: " ";
@@ -604,152 +599,19 @@ figcaption {
 }
 @media #{$breakpoint-small} {
   .boxes-section {
-    margin-left: 0rem;
+    margin-left: 0;
   }
 }
 @media #{$breakpoint-medium} {
   .boxes-section {
-    margin-left: 0rem;
+    margin-left: 0;
   }
 }
 @media #{$breakpoint-large} {
   .boxes-section {
     margin-left: 2rem;
-
   }
 }
-
-// @media only screen and (min-width: 80em) {
-//   .boxes-section {
-//     width: 1120px;
-//     top: -60px;
-//     margin-left: 3rem;
-//   }
-// }
-// .main-boxes {
-//   width: 100%;
-//   min-height: 400px;
-//   padding: 20px;
-//   color: $secondary;
-// }
-// .main-boxes:before,
-// .main-boxes:after {
-//   content: " ";
-//   display: table;
-//   visibility: hidden;
-// }
-// .main-boxes:after {
-//   clear: both;
-// }
-// @media only screen and (min-width: 47.5em) {
-//   .main-boxes {
-//     padding: 0 70px;
-//   }
-// }
-// .main-boxes {
-//   text-decoration: none;
-// }
-// @media only screen and (min-width: 64em) {
-//   .main-boxes {
-//     width: 31%;
-//     min-height: 180px;
-//     margin-left: 0;
-//     margin-right: 0;
-//   }
-// }
-// [class*='box-'] {
-//   background: #fff;
-//   cursor: pointer;
-//   margin-left: 15px;
-//   margin-right: 15px;
-//   padding: 15px;
-//   width: 100%;
-//   min-height: 180px;
-//   text-align: center;
-//   margin-bottom: 20px;
-//   box-shadow: $box-shadow-light;
-// }
-// [class*='box-']:hover {
-//   background: $primary;
-//   transition: all 250ms ease-in-out;
-//   -moz-transition: all 250ms ease-in-out;
-//   -o-transition: all 250ms ease-in-out;
-//   -webkit-transition: all 250ms ease-in-out;
-//   color: lighten($accent, 40%);
-//   border: white 1px solid;
-// }
-
-// @media only screen and (min-width: 34.375em) {
-//   [class*='box-'] {
-//     width: 48%;
-//     float: left;
-//     vertical-align: top;
-//   }
-// }
-// @media only screen and (min-width: 47.5em) {
-//   [class*='box-'] {
-//     padding: 25px;
-//   }
-// }
-// @media only screen and (min-width: 64em) {
-//   [class*='box-'] {
-//     width: 32%;
-//     min-height: 200px;
-//     margin-left: 0;
-//     margin-right: 0;
-//   }
-// }
-// @media only screen and (min-width: 34.375em) {
-//   .main-boxes .box-2 {
-//     margin-left: 3%;
-//   }
-// }
-// @media only screen and (min-width: 64em) {
-//   .main-boxes .box-2 {
-//     margin-left: 0;
-//     margin-right: 0;
-//   }
-// }
-// @media only screen and (min-width: 64em) {
-//   .main-boxes .box-2 {
-//     margin-left: 20px;
-//     margin-right: 20px;
-//   }
-// }
-// .main-boxes h1 {
-//   margin-bottom: 10px;
-//   font-size: 1.1em;
-//   text-transform: uppercase;
-// }
-//
-// .boxes-section {
-//   width: 100%;
-//   margin: 0 auto;
-//   position: relative;
-//   top: 0;
-// }
-// .boxes-section:before,
-// .boxes-section:after {
-//   content: " ";
-//   display: table;
-//   visibility: hidden;
-// }
-// .boxes-section:after {
-//   clear: both;
-// }
-// @media only screen and (min-width: 47.5em) {
-//   .boxes-section {
-//     top: -62px;
-//   }
-// }
-// @media only screen and (min-width: 80em) {
-//   .boxes-section {
-//     width: 1280px;
-//     top: -80px;
-//     margin-left: 3%;
-//   }
-// }
-// ENDIN
 .main-page-icons {
   padding-top: 6em;
   padding-bottom: 3em;
@@ -1000,7 +862,6 @@ nav ul a:hover {
   padding: 1%;
   h1 {
     color: $secondary;
-    padding-top: 1em;
   }
   p a {
     color: $accent;
@@ -1010,9 +871,8 @@ nav ul a:hover {
   }
 }
 .contact-map iframe {
-  width: 80%;
-  height: 20em;
-  margin: 4% 4% 0;
+  width: 90%;
+  height: 12em;
 }
 @media only screen and (max-width: 600px) {
   .page-intro {
@@ -1033,19 +893,37 @@ nav ul a:hover {
 }
 footer {
   background-color: $primary;
-  // padding-bottom: 10em;
   font-family: $font-serif;
   color: #bbb;
   text-align: center;
   font-weight: 200;
+  padding-top: 2em;
+  height: 12em;
   h1 {
-    font-weight: 200;
-    font-family: $font-serif;
+    font-weight: 400;
+    font-family: $font-sans;
+    margin-top: 0;
+    font-size: 2em;
+    color: #999999;
   }
   h2 {
     font-size: 1.5em;
     font-weight: 200;
-    font-family: $font-serif;
+    font-family: $font-sans;
+    margin-top: 0;
+  }
+  img {
+    width: 60%;
+    margin-top: -2%;
+  }
+  a {
+    text-transform: uppercase;
+    font-family: $font-sans;
+    font-weight: 200;
+    color: white;
+  }
+  a:hover {
+    color: white;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -1058,6 +936,15 @@ footer {
     }
   }
 }
+@media #{$breakpoint-small} {
+  footer {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    h1 {
+      font-size: 1.2em;
+    }
+  }
+}
 @media only screen and (max-width: 500px) {
   .property-name,
   .property-address,
@@ -1066,16 +953,45 @@ footer {
   }
 }
 .filter-area {
-  background: #ddd;
+  background: #004FF9;
+  background: -webkit-linear-gradient(to top, #ddd , white);
+  background: linear-gradient(to top, #ddd , white);
   width: 40%;
   padding: 1em 0;
+  margin-bottom: 1em;
   border: 1px solid $primary;
+  box-shadow: $box-shadow-light;
   font-size: 1.2em;
   input {
     // padding: 1em 0em 1em 0em;
-    margin-left: 0;
+    margin-left: 1em;
     margin-right: 0.5em;
   }
+}
+.icon:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100% );
+}
+/* Hover state - trigger effect */
+.icon:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+/* Active state */
+.icon:active:after {
+  opacity: 0;
 }
 @media only screen and (max-width: 500px) {
   .filter-area {

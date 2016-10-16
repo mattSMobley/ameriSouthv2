@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./css/main.min.css">
   <link rel="stylesheet" href="./css/simple-slideshow-styles.css">
   <link rel="shortcut icon" href="./img/logo-fav2.jpg" type='image/x-icon'/ >
+  <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
@@ -42,6 +43,7 @@
 
           <nav>
               <ul>
+                  <li><a href="#/">Home</a></li>
                   <li><a href="#/properties">Properties</a></li>
                   <li><a href="#/services">Services</a></li>
                   <li><a href="#/contact">Contact</a></li>
@@ -58,39 +60,46 @@
   <div ng-view>
   </div>
 
-  <!-- <center>
-    <h1 style="letter-spacing: 15px; color: gray"> ... </h1>
-  </center> -->
-  <br><br><br>
 
+<center>
+  <h1 style="letter-spacing: 15px; color: white"> . . . </h1>
+</center>
+<br><br>
 
-  <footer>
-    <div class="row">
-    </div>
-    <div class="row">
-    <div class="column-4">
-      <h1> AmeriSouth </h1>
-    </div>
-    <div class="column-4">
-      <h2> 325 N. St Paul Street, Suite 3350
-        <br>Dallas, Texas 75201
-      </h2>
-    </div>
-    <div class="column-4">
-      <h2> Phone: 214.750.1709
-        <br>Fax: 214.750.1623
-      </h2>
-    </div>
-  </div>
+<footer>
   <div class="row">
   </div>
-  </footer>
+  <div class="row">
+  <div class="column-4">
+    <img src="img/logo-foot2.png">
+    <br>
+    <a href="#/">HOME</a> |
+    <a href="#/">Properties</a> |
+    <a href="#/">Services</a> |
+    <a href="#/">Contact</a> 
+  </div>
+  <div class="column-4">
+    <h1> ADDRESS </h1>
+    <h2>325 N. St Paul Street, Suite 3350
+      <br>Dallas, Texas 75201
+    </h2>
+  </div>
+  <div class="column-4">
+    <h1> CONTACT </h1>
+    <h2> Phone: 214.750.1709
+      <br>Fax: 214.750.1623
+    </h2>
+  </div>
+</div>
+<div class="row">
+</div>
+</footer>
 
   <script src="./js/app.js"></script>
   <script>
   $(window).scroll(function() {
 
-      if ($(window).scrollTop() > 350) {
+      if ($(window).scrollTop() > 200) {
           $('.main_h').addClass('sticky');
           $('.main_h').removeClass('initial');
       } else {
