@@ -151,6 +151,7 @@ main {
     text-decoration: none;
   }
 }
+
 .rightLink {
   position: absolute;
   top: 1%;
@@ -663,8 +664,15 @@ nav ul a:hover {
   font-size: 2.5em;
   padding: 15px;
   line-height: 1.2;
-  color: black;
+  color: $primary;
 }
+a:hover {
+  color: $secondary;
+}
+.property-name:hover {
+  color: $secondary;
+}
+
 .property-address,
 .property-city {
   font-size: 1.5em;
