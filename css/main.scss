@@ -1144,11 +1144,12 @@ footer {
   .cd-fixed-bg.cd-bg-1 {
     background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
     background-attachment: fixed;
+    background-size: contain;
   }
   main .cd-container {
-    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
-    background-attachment: fixed;
-    background-size: contain;
+    // background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
+    // background-attachment: fixed;
+    // background-size: contain;
   }
 }
 @media only screen and (max-width: 425px) {
