@@ -1166,9 +1166,10 @@ footer {
     background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
     background-attachment: scroll;
     -webkit-background-size: cover;
-    background-origin: border-box;
-    min-width: 100%;
-    min-height: 100%;
+  }
+  .cd-fixed-bg.cd-bg-2 {
+    background-attachment: scroll;
+    -webkit-background-size: cover;
   }
   main .cd-container {
     // background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
