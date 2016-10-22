@@ -1129,10 +1129,10 @@ footer {
 }
 @media only screen and (max-width: 505px) {
   [class*='box-'] {
-    max-width: 200px;
+    max-width: 190px;
     height: 60px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
     padding-bottom: 15px;
     p {
       font-size: 0.8em;
@@ -1142,6 +1142,10 @@ footer {
     padding-bottom: 0em;
   }
   .cd-fixed-bg.cd-bg-1 {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
+    background-attachment: fixed;
+  }
+  main .cd-container {
     background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
     background-attachment: fixed;
   }
