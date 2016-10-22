@@ -616,6 +616,17 @@ nav ul a:hover {
   border-bottom: #888888 1px solid;
   text-decoration: none;
 }
+nav ul li ul {
+  display: none;
+}
+#menu-open-services:hover > ul
+{
+	display:block
+}
+.fa{
+  font-size: 1em;
+  padding-left: .2em;
+}
 @media only screen and (max-width: 938px) {
   nav {
     margin-top: -5px;

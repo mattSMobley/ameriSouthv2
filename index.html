@@ -13,7 +13,7 @@
   <!-- <link rel="stylesheet" href="./css/main.css"> -->
   <link rel="stylesheet" href="./css/main.min.css">
   <link rel="stylesheet" href="./css/simple-slideshow-styles.css">
-  <link rel="shortcut icon" href="./img/logo-fav2.jpg" type='image/x-icon'/ >
+  <link rel="shortcut icon" href="./img/logo-fav2.jpg" type='image/x-icon' />
   <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -23,118 +23,133 @@
   </script> -->
   <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCd4yYuac4ot0nIp49HE9f_Sxy-tVKrD4I&sensor=false&extension=.js&libraries=places">
   </script>
-    <script src="js/ng-map.min.js"></script>
+  <script src="js/ng-map.min.js"></script>
 
 
 </head>
 
 <body ng-controller="MainController as MC">
-<section class="wrapper">
-  <header class="main_h initial">
+  <section class="wrapper">
+    <header class="main_h initial">
 
       <div class="row">
-          <a class="logo" href="#/"><img src="img/logo-orig.png"></a>
+        <a class="logo" href="#/">
+          <img src="img/logo-orig.png">
+        </a>
 
-          <div class="mobile-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
+        <div class="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-          <nav>
-              <ul>
-                  <li><a href="#/">Home</a></li>
-                  <li><a href="#/properties">Properties</a></li>
-                  <li><a href="#/services">Services</a></li>
-                  <li><a href="#/contact">About</a></li>
-                  <li><a href="#/contact">Contact</a></li>
-              </ul>
-          </nav>
+        <nav>
+          <ul>
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/properties">Properties</a></li>
+            <li><a href="#/services">Services <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            <!-- <ul>
+              <li><a href="/#">Property Management</a></li>
+              <li><a href="/#">Development</a></li>
+              <li><a href="/#">Uplifting Communities</a></li>
+            </ul> -->
+            <li><a href="#/about">About <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            <!-- <ul>
+              <li><a href="/#">Company History</a></li>
+              <li><a href="/#">Executive Team</a></li>
+              <li><a href="/#">In The News</a></li>
+              <li><a href="#/contact">Contact</a></li>
+            </ul> -->
+        </nav>
 
-      </div> <!-- / row -->
+      </div>
+      <!-- / row -->
 
-  </header>
+    </header>
 
-</section>
+  </section>
 
 
   <div ng-view>
   </div>
 
 
-<center>
-  <h1 style="letter-spacing: 15px; color: white"> . . . </h1>
-</center>
-<br><br>
+  <center>
+    <h1 style="letter-spacing: 15px; color: white"> . . . </h1>
+  </center>
+  <br>
+  <br>
 
-<footer>
-  <div class="row">
-  </div>
-  <div class="row">
-  <div class="column-4">
-    <img src="img/logo-foot2.png">
-    <br>
-    <a href="#/">HOME</a> |
-    <a href="#/">Properties</a> |
-    <a href="#/">Services</a> |
-    <a href="#/">Contact</a>
-  </div>
-  <div class="column-4">
-    <h1> ADDRESS </h1>
-    <h2>325 N. St Paul Street, Suite 3350
-      <br>Dallas, Texas 75201
-    </h2>
-  </div>
-  <div class="column-4">
-    <h1> CONTACT </h1>
-    <h2> Phone: 214.750.1709
-      <br>Fax: 214.750.1623
-    </h2>
-  </div>
-</div>
-<div class="row">
-</div>
-</footer>
+  <footer>
+    <div class="row">
+    </div>
+    <div class="row">
+      <div class="column-4">
+        <img src="img/logo-foot2.png">
+        <br>
+        <a href="#/">HOME</a> |
+        <a href="#/">Properties</a> |
+        <a href="#/">Services</a> |
+        <a href="#/">Contact</a>
+      </div>
+      <div class="column-4">
+        <h1> ADDRESS </h1>
+        <h2>325 N. St Paul Street, Suite 3350
+          <br>Dallas, Texas 75201
+        </h2>
+      </div>
+      <div class="column-4">
+        <h1> CONTACT </h1>
+        <h2> Phone: 214.750.1709
+          <br>Fax: 214.750.1623
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+    </div>
+  </footer>
 
   <script src="./js/app.js"></script>
   <script>
-  $(window).scroll(function() {
+    $(window).scroll(function() {
 
       if ($(window).scrollTop() > 200) {
-          $('.main_h').addClass('sticky');
-          $('.main_h').removeClass('initial');
+        $('.main_h').addClass('sticky');
+        $('.main_h').removeClass('initial');
       } else {
-          $('.main_h').removeClass('sticky');
-          $('.main_h').addClass('initial');
+        $('.main_h').removeClass('sticky');
+        $('.main_h').addClass('initial');
       }
-  });
+    });
 
-  // Mobile Navigation
-  $('.mobile-toggle').click(function() {
+    // Mobile Navigation
+    $('.mobile-toggle').click(function() {
       if ($('.main_h').hasClass('open-nav')) {
-          $('.main_h').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
       } else {
-          $('.main_h').addClass('open-nav');
+        $('.main_h').addClass('open-nav');
       }
-  });
+    });
 
-  $('.main_h li a').click(function() {
+    $('.main_h li a').click(function() {
       if ($('.main_h').hasClass('open-nav')) {
-          $('.navigation').removeClass('open-nav');
-          $('.main_h').removeClass('open-nav');
+        $('.navigation').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
       }
-  });
+    });
 
-  // navigation scroll lijepo radi materem
-  $('nav a').click(function(event) {
+    // navigation scroll lijepo radi materem
+    $('nav a').click(function(event) {
       var id = $(this).attr("href");
       var offset = 70;
       var target = $(id).offset().top - offset;
       $('html, body').animate({
-          scrollTop: target
+        scrollTop: target
       }, 500);
       event.preventDefault();
-  });
+    });
+
+
   </script>
 
   <script src="./js/controllers.js"></script>
