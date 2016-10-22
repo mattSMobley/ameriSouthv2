@@ -366,7 +366,7 @@ figcaption {
     margin-top: 0.8em;
     a {
       color: $secondary;
-      font-size: 1.2em;
+      font-size: 1em;
     }
   }
   .logo img {
@@ -616,12 +616,12 @@ nav ul a:hover {
   border-bottom: #888888 1px solid;
   text-decoration: none;
 }
-@media only screen and (max-width: 864px) {
+@media only screen and (max-width: 938px) {
   nav {
     margin-top: -5px;
     ul li {
     margin-left: 10px;
-    font-size: .8em;
+    font-size: .9em;
   }
 }
 }
@@ -1188,6 +1188,7 @@ footer {
     padding-top: 0px;
     p {
       font-size: 0.8em;
+      padding-top: 0em;
     }
   }
   .comment {
