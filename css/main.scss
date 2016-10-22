@@ -615,6 +615,15 @@ nav ul a:hover {
   border-bottom: #888888 1px solid;
   text-decoration: none;
 }
+@media only screen and (max-width: 864px) {
+  nav {
+    margin-top: -5px;
+    ul li {
+    margin-left: 10px;
+    font-size: .8em;
+  }
+}
+}
 .mobile-toggle {
   display: none;
   cursor: pointer;
@@ -1083,6 +1092,17 @@ footer {
       padding: 1em 3em;
     }
   }
+  .open-nav {
+    background-color: $base;
+  }
+  nav ul li {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px){
+  nav {
+    padding: 0px;
+  }
 }
 @media only screen and (max-width: 705px) {
   [class*='box-'] {
@@ -1090,13 +1110,6 @@ footer {
     max-height: 160px;
     margin-right: 5px;
     margin-left: 5px;
-  }
-  .initial {
-    opacity: .8;
-    top: 0;
-    border-bottom: 1px solid $base;
-    background-color: white;
-    text-decoration: none;
   }
 }
 @media only screen and (max-width: 624px) {
@@ -1153,7 +1166,6 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     background-origin: border-box;
-    background-position: 0px 1px;
   }
   main .cd-container {
     // background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
