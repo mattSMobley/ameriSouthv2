@@ -61,7 +61,8 @@ main {
   }
 }
 .cd-fixed-bg.cd-bg-1 {
-  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/landscapephotos/3.jpg");
+  background-position: 0px -200px;
 }
 .news {
   text-align: center;
@@ -177,9 +178,9 @@ main {
   padding-right: 20%;
   font-size: 1.6em;
   line-height: 2;
-  text-shadow: 1px 1px $primary;
+  text-shadow: 2px 2px $primary;
   font-family: "Gill Sans";
-  font-weight: 100;
+  font-weight: 400;
   color: $base;
   text-transform: none;
 }
@@ -413,7 +414,6 @@ figcaption {
 //WELP, heres how to do it. now make it your own(&better)
 .main-boxes {
   width: 100%;
-  min-height: 30em;
   background: #ccc;
   padding: 20px;
   *zoom: 1;
