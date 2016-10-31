@@ -611,8 +611,8 @@ nav ul li {
   text-align: left;
   background-color: white;
   padding: 15px 15px 15px 50px;
-  border-radius: 20%;
   margin-left: -40px;
+  box-shadow: $box-shadow-light;
   li {
     color: #ccc;
     margin-left: -35px;
@@ -1214,16 +1214,13 @@ footer {
   }
   .cd-fixed-bg.cd-bg-1 {
     background-attachment: scroll;
+    background-position: center;
   }
   .cd-fixed-bg.cd-bg-2 {
     background-attachment: scroll;
     -webkit-background-size: cover;
   }
-  main .cd-container {
-    // background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
-    // background-attachment: fixed;
-    // background-size: contain;
-  }
+
 }
 @media only screen and (max-width: 425px) {
   [class*='box-'] {
