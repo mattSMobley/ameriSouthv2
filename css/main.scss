@@ -61,8 +61,8 @@ main {
   }
 }
 .cd-fixed-bg.cd-bg-1 {
-  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/landscapephotos/3.jpg");
-  background-position: 0px -200px;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url('../img/landscapephotos/3.jpg');
+  background-position: 0 -150px;
 }
 .news {
   text-align: center;
@@ -152,7 +152,6 @@ main {
     text-decoration: none;
   }
 }
-
 .rightLink {
   position: absolute;
   top: 1%;
@@ -192,14 +191,14 @@ main {
   }
 }
 .cd-fixed-bg.cd-bg-2 {
-  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../img/news-background.JPG");
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('../img/news-background.JPG');
   -webkit-background-position: cover;
 }
 .cd-fixed-bg.cd-bg-3 {
-  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url("../img/features/Winfield Estates - Pool.jpg");
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url('../img/features/Winfield Estates - Pool.jpg');
 }
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url("../img/cd-background-4.jpg");
+  background-image: url('../img/cd-background-4.jpg');
 }
 .cd-color-yellow {
   width: 83%;
@@ -342,6 +341,10 @@ figcaption {
   top: -100px;
   padding-bottom: 6px;
   font-family: $font-sans;
+}
+[class*='sub-menu'] li {
+  display: block;
+  position: relative;
 }
 .open-nav {
   max-height: 400px !important;
@@ -578,10 +581,13 @@ nav {
   nav {
     width: 100%;
   }
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+  }
 }
 nav ul {
   list-style: none;
-  overflow: hidden;
   text-align: right;
   float: right;
 }
@@ -599,6 +605,37 @@ nav ul li {
   margin-left: 35px;
   line-height: 1.5;
 }
+[class*='sub-menu'] {
+  position: fixed;
+  index: 1;
+  text-align: left;
+  background-color: white;
+  padding: 15px 15px 15px 50px;
+  border-radius: 20%;
+  margin-left: -40px;
+  li {
+    color: #ccc;
+    margin-left: -35px;
+  }
+}
+.sub-menu-services {
+  margin-left: -55px
+}
+@media only screen and (max-width: 766px) {
+  [class*='sub-menu'] {
+    position: relative;
+    padding: 0;
+    margin-left: -5px;
+    padding: 0;
+    margin-bottom: 0;
+    li {
+      margin-left: 0px;
+    }
+  }
+  .main_h {
+    overflow: hidden;
+  }
+}
 @media only screen and (max-width: 766px) {
   nav ul li {
     width: 100%;
@@ -611,30 +648,33 @@ nav ul a {
   text-transform: uppercase;
   font-size: 14px;
 }
-nav ul a:hover {
-  border-top: #888888 1px solid;
-  border-bottom: #888888 1px solid;
-  text-decoration: none;
+nav ul li {
+  color: $secondary;
+  text-transform: uppercase;
+  font-size: 14px;
 }
-nav ul li ul {
+nav ul li:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+nav ul ul {
   display: none;
 }
-#menu-open-services:hover > ul
-{
-	display:block
+nav ul li:hover {
+  text-decoration: none;
 }
-.fa{
+.fa {
   font-size: 1em;
-  padding-left: .2em;
+  padding-left: 0.2em;
 }
 @media only screen and (max-width: 938px) {
   nav {
     margin-top: -5px;
     ul li {
-    margin-left: 10px;
-    font-size: .9em;
+      margin-left: 10px;
+      font-size: 0.9em;
+    }
   }
-}
 }
 .mobile-toggle {
   display: none;
@@ -696,7 +736,6 @@ a:hover {
 .property-name:hover {
   color: $secondary;
 }
-
 .property-address,
 .property-city {
   font-size: 1.5em;
@@ -873,7 +912,7 @@ footer {
   padding-top: 1.5em;
 }
 .apt-container {
-  background-image: url(../img/concrete_seamless.png);
+  background-image: url('../img/concrete_seamless.png');
 }
 .coming-soon {
   font-family: $font-sans;
@@ -1004,7 +1043,7 @@ footer {
   display: block;
   width: 32px;
   height: 32px;
-  background: rgba(0,0,0,.4) url(../img/arrows-alt_ffffff_64.png);
+  background: rgba(0,0,0,.4) url('../img/arrows-alt_ffffff_64.png');
   background-size: contain;
   position: absolute;
   top: 5px;
@@ -1016,23 +1055,23 @@ footer {
   opacity: 0.8;
 }
  :-webkit-full-screen .bss-fullscreen {
-  background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+  background: rgba(0,0,0,.4) url('../img/compress_ffffff_64.png');
   background-size: contain;
 }
  :-moz-full-screen .bss-fullscreen {
-  background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+  background: rgba(0,0,0,.4) url('../img/compress_ffffff_64.png');
   background-size: contain;
 }
  :-ms-fullscreen .bss-fullscreen {
-  background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+  background: rgba(0,0,0,.4) url('../img/compress_ffffff_64.png');
   background-size: contain;
 }
  :full-screen .bss-fullscreen {
-  background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+  background: rgba(0,0,0,.4) url('../img/compress_ffffff_64.png');
   background-size: contain;
 }
  :fullscreen .bss-fullscreen {
-  background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
+  background: rgba(0,0,0,.4) url('../img/compress_ffffff_64.png');
   background-size: contain;
 }
 /************* MEDIA QUERIES *************/
@@ -1111,9 +1150,9 @@ footer {
     text-align: center;
   }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   nav {
-    padding: 0px;
+    padding: 0;
   }
 }
 @media only screen and (max-width: 705px) {
@@ -1137,7 +1176,7 @@ footer {
   .filter-area {
     width: 60%;
     .checkSorts {
-      padding: 1em 1em;
+      padding: 1em;
     }
   }
 }
@@ -1171,12 +1210,10 @@ footer {
     }
   }
   .comment {
-    padding-bottom: 0em;
+    padding-bottom: 0;
   }
   .cd-fixed-bg.cd-bg-1 {
-    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url("../img/features/skyline45.jpg");
     background-attachment: scroll;
-    -webkit-background-size: cover;
   }
   .cd-fixed-bg.cd-bg-2 {
     background-attachment: scroll;
@@ -1195,15 +1232,15 @@ footer {
     margin-right: 3px;
     margin-left: 3px;
     // padding-bottom: 15px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 0;
+    padding-top: 0;
     p {
       font-size: 0.8em;
-      padding-top: 0em;
+      padding-top: 0;
     }
   }
   .comment {
-    padding-bottom: 0em;
+    padding-bottom: 0;
   }
 }
 /************ CSS3 ANIMATIONS ************/

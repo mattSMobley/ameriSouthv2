@@ -47,19 +47,22 @@
           <ul>
             <li><a href="#/">Home</a></li>
             <li><a href="#/properties">Properties</a></li>
-            <li><a href="#/services">Services <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <!-- <ul>
-              <li><a href="/#">Property Management</a></li>
-              <li><a href="/#">Development</a></li>
-              <li><a href="/#">Uplifting Communities</a></li>
-            </ul> -->
-            <li><a href="#/about">About <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-            <!-- <ul>
-              <li><a href="/#">Company History</a></li>
-              <li><a href="/#">Executive Team</a></li>
-              <li><a href="/#">In The News</a></li>
-              <li><a href="#/contact">Contact</a></li>
-            </ul> -->
+            <li class="hover-services">Services <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <ul class="sub-menu-services">
+                <li><a href="/#">Property Management</a></li>
+                <li><a href="/#">Development</a></li>
+                <li><a href="/#">Uplifting Communities</a></li>
+              </ul>
+            </li>
+            <li class="hover-about ">About <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <ul class="sub-menu-about">
+                <li><a href="/#">Company History</a></li>
+                <li><a href="/#">Executive Team</a></li>
+                <li><a href="/#">In The News</a></li>
+                <li><a href="#/contact">Contact</a></li>
+              </ul>
+            </li>
+
         </nav>
 
       </div>
@@ -112,7 +115,6 @@
   <script src="./js/app.js"></script>
   <script>
     $(window).scroll(function() {
-
       if ($(window).scrollTop() > 200) {
         $('.main_h').addClass('sticky');
         $('.main_h').removeClass('initial');
@@ -122,6 +124,12 @@
       }
     });
 
+    $('.hover-services').click(function(){
+      $('.sub-menu-services').toggle();
+    })
+    $('.hover-about').click(function(){
+      $('.sub-menu-about').toggle();
+    })
     // Mobile Navigation
     $('.mobile-toggle').click(function() {
       if ($('.main_h').hasClass('open-nav')) {
@@ -130,14 +138,12 @@
         $('.main_h').addClass('open-nav');
       }
     });
-
     $('.main_h li a').click(function() {
       if ($('.main_h').hasClass('open-nav')) {
         $('.navigation').removeClass('open-nav');
         $('.main_h').removeClass('open-nav');
       }
     });
-
     // navigation scroll lijepo radi materem
     $('nav a').click(function(event) {
       var id = $(this).attr("href");
@@ -148,8 +154,6 @@
       }, 500);
       event.preventDefault();
     });
-
-
   </script>
 
   <script src="./js/controllers.js"></script>
