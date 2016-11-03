@@ -176,7 +176,7 @@ main {
   padding-left: 20%;
   padding-right: 20%;
   font-size: 1.6em;
-  line-height: 2;
+  line-height: 1.5;
   text-shadow: 2px 2px $primary;
   font-family: "Gill Sans";
   font-weight: 400;
@@ -188,6 +188,9 @@ main {
     padding-left: 10%;
     padding-right: 10%;
     font-style: bold;
+  }
+  h2 {
+    margin-top: 0px;
   }
 }
 .cd-fixed-bg.cd-bg-2 {
