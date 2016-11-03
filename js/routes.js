@@ -7,12 +7,6 @@ angular.module("app")
       .when('/properties', {
         templateUrl: 'views/properties.html'
       })
-      .when('/services', {
-        templateUrl: 'views/services.html'
-      })
-      .when('/contact', {
-        templateUrl: 'views/contact.html'
-      })
       .when('/apts/goodhaven', {
         templateUrl: 'views/apts/goodhaven.html'
       })
@@ -54,6 +48,27 @@ angular.module("app")
       })
       .when('/apts/winfieldestates', {
         templateUrl: 'views/apts/winfieldestates.html'
+      })
+      .when('/services/property-management', {
+        templateUrl: 'views/services/property-management.html'
+      })
+      .when('/services/development', {
+        templateUrl: 'views/services/development.html'
+      })
+      .when('/services/uplifting-communities', {
+        templateUrl: 'views/services/uplifting-communities.html'
+      })
+      .when('/about/company-history', {
+        templateUrl: 'views/about/company-history.html'
+      })
+      .when('/about/executive-team', {
+        templateUrl: 'views/about/executive-team.html'
+      })
+      .when('/about/in-the-news', {
+        templateUrl: 'views/about/in-the-news.html'
+      })
+      .when('/about/contact', {
+        templateUrl: 'views/about/contact.html'
       });
 
   });

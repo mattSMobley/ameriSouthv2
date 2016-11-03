@@ -49,17 +49,17 @@
             <li><a href="#/properties">Properties</a></li>
             <li class="hover-services">Services <i class="fa fa-caret-down" aria-hidden="true"></i>
               <ul class="sub-menu-services">
-                <li><a href="/#">Property Management</a></li>
-                <li><a href="/#">Development</a></li>
-                <li><a href="/#">Uplifting Communities</a></li>
+                <li><a href="#/services/property-management">Property Management</a></li>
+                <li><a href="#/services/development">Development</a></li>
+                <li><a href="#/services/uplifting-communities">Uplifting Communities</a></li>
               </ul>
             </li>
             <li class="hover-about ">About <i class="fa fa-caret-down" aria-hidden="true"></i>
               <ul class="sub-menu-about">
-                <li><a href="/#">Company History</a></li>
-                <li><a href="/#">Executive Team</a></li>
-                <li><a href="/#">In The News</a></li>
-                <li><a href="#/contact">Contact</a></li>
+                <li><a href="#/about/company-history">Company History</a></li>
+                <li><a href="#/about/executive-team">Executive Team</a></li>
+                <li><a href="#/about/in-the-news">In The News</a></li>
+                <li><a href="#/about/contact">Contact</a></li>
               </ul>
             </li>
 
@@ -125,12 +125,27 @@
     });
 
     $('.hover-services').click(function(){
-      $('.sub-menu-services').toggle();
+      if ($('.sub-menu-about').css('display','inline')) {
+        $('.sub-menu-about').toggle();
+        $('.sub-menu-services').toggle('fast', function(){
+        });
+      }else {
+        $('.sub-menu-services').toggle('fast', function(){
+        });
+      }
+
     })
     $('.hover-about').click(function(){
-      $('.sub-menu-about').toggle();
+      if ($('.sub-menu-services').css('display','inline')) {
+        $('.sub-menu-services').toggle();
+        $('.sub-menu-about').toggle('fast', function(){
+        });
+      }else {
+        $('.sub-menu-about').toggle('fast', function(){
+        });
+      }
     })
-    // Mobile Navigation
+    // mobile nav
     $('.mobile-toggle').click(function() {
       if ($('.main_h').hasClass('open-nav')) {
         $('.main_h').removeClass('open-nav');
@@ -144,7 +159,7 @@
         $('.main_h').removeClass('open-nav');
       }
     });
-    // navigation scroll lijepo radi materem
+    // navigation scroll
     $('nav a').click(function(event) {
       var id = $(this).attr("href");
       var offset = 70;
