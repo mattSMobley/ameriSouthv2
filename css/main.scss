@@ -272,7 +272,7 @@ main {
     color: white;
     text-align: center;
     font-family: $font-serif;
-    text-transform: uppercase;
+    // text-transform: uppercase;
   }
   hr {
     border-top: 2px solid #ccc;
@@ -770,9 +770,12 @@ a:hover {
     color: $secondary;
   }
   p a {
-    color: $accent;
+    color: $primary;
   }
   a:hover {
+    color: lighten($secondary, 15%);
+  }
+  i {
     color: darken($accent, 10%);
   }
 }
@@ -915,6 +918,12 @@ footer {
   padding: 3em;
   font-size: 2em;
   font-style: italic;
+}
+.services-container p a {
+  color: $secondary;
+}
+.news-link:hover {
+  color: lighten($secondary, 20%);
 }
 .apt-info {
   padding-top: 2.5em;
