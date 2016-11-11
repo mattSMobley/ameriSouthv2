@@ -49,8 +49,8 @@ main {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 12em;
+  padding-bottom: 12em;
   text-align: center;
   color: white;
   // font-size: 5em;
@@ -61,8 +61,8 @@ main {
   }
 }
 .cd-fixed-bg.cd-bg-1 {
-  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url('../img/landscapephotos/3.jpg');
-  background-position: 0 -150px;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)), url('../img/features/skyline-light.jpg');
+  background-position: right -200px 0px;
 }
 .news {
   text-align: center;
