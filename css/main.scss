@@ -771,6 +771,7 @@ a:hover {
   }
   p a {
     color: $primary;
+    cursor: pointer;
   }
   a:hover {
     color: lighten($secondary, 15%);
