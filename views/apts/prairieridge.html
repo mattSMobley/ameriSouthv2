@@ -57,7 +57,7 @@
 <br><br>
 <h1> Floorplans </h1>
 <div class="floorplans">
-  <div class="row">
+  <!-- <div class="row">
     <img src="img/floorplans/Prairie Ridge - 1.jpg">
     <br>
     <p><b>1 Bedroom / 1 Bathroom</b> - 603 sq ft.</p>
@@ -71,8 +71,20 @@
     <img src="img/floorplans/Prairie Ridge - 3.jpg">
     <br>
     <p><b>3 Bedroom / 1 Bathroom</b> - 938 sq ft.</p>
+  </div> -->
+  <div class="row">
+    <ul class="pgwSlider">
+      <li>
+        <img src="img/floorplans/Prairie Ridge - 1.jpg" alt="1 Bedroom/1 Bathroom (603 sq ft.)">
+      </li>
+      <li>
+        <img src="img/floorplans/Prairie Ridge - 2.jpg" alt="2 Bedroom/1 Bathroom (796 sq ft.)">
+      </li>
+      <li>
+        <img src="img/floorplans/Prairie Ridge - 3.jpg" alt="3 Bedroom/1 Bathroom (938 sq ft.)">
+      </li>
+    </ul>
   </div>
-
 
 </div>
 <br><br><br><br>
@@ -88,4 +100,8 @@ var opts = {
   }
 };
 makeBSS('.bss-slides', opts);
+
+$(document).ready(function() {
+  $('.pgwSlider').pgwSlider();
+});
 </script>

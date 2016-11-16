@@ -61,19 +61,17 @@
 <h1> Floorplans </h1>
 <div class="floorplans">
   <div class="row">
-    <img src="img/floorplans/Royal Crest - 1.jpg">
-    <br>
-    <p><b>1 Bedroom / 1 Bathroom</b> - 539 sq ft.</p>
-  </div>
-  <div class="row">
-    <img src="img/floorplans/Royal Crest - 2.jpg">
-    <br>
-    <p><b>2 Bedroom / 2 Bathroom</b> - 787 sq ft.</p>
-  </div>
-  <div class="row">
-    <img src="img/floorplans/Royal Crest - 3.jpg">
-    <br>
-    <p><b>3 Bedroom / 2 Bathroom</b> - 832 sq ft.</p>
+    <ul class="pgwSlider">
+      <li>
+        <img src="img/floorplans/Royal Crest - 1.jpg" alt="1 Bedroom/1 Bathroom (539 sq ft.)">
+      </li>
+      <li>
+        <img src="img/floorplans/Royal Crest - 2.jpg" alt="2 Bedroom/2 Bathroom (787 sq ft.)">
+      </li>
+      <li>
+        <img src="img/floorplans/Royal Crest - 3.jpg" alt="3 Bedroom/2 Bathroom (832 sq ft.)">
+      </li>
+    </ul>
   </div>
 </div>
 
@@ -90,4 +88,8 @@ var opts = {
   }
 };
 makeBSS('.bss-slides', opts);
+
+$(document).ready(function() {
+  $('.pgwSlider').pgwSlider();
+});
 </script>

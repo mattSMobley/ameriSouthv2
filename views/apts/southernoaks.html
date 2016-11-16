@@ -61,24 +61,20 @@
 <h1> Floorplans </h1>
 <div class="floorplans">
   <div class="row">
-    <img src="img/floorplans/Southern Oaks - 1.jpg">
-    <br>
-    <p><b>2 Bedroom / 1 Bathroom</b> - 900 sq ft.</p>
-  </div>
-  <div class="row">
-    <img src="img/floorplans/Southern Oaks - 2.jpg">
-    <br>
-    <p><b>3 Bedroom / 1 Bathroom</b> - 1125 sq ft.</p>
-  </div>
-  <div class="row">
-    <img src="img/floorplans/Southern Oaks - 3.jpg">
-    <br>
-    <p><b>4 Bedroom / 2 Bathroom</b> - 1700 sq ft. townhome</p>
-  </div>
-  <div class="row">
-    <img src="img/floorplans/Southern Oaks - 4.jpg">
-    <br>
-    <p><b>5 Bedroom / 2 Bathroom</b> - 1850 sq ft. townhome</p>
+    <ul class="pgwSlider">
+      <li>
+        <img src="img/floorplans/Southern Oaks - 1.jpg" alt="2 Bedroom/1 Bathroom (900 sq ft.)">
+      </li>
+      <li>
+        <img src="img/floorplans/Southern Oaks - 2.jpg" alt="3 Bedroom/1 Bathroom (1125 sq ft.)">
+      </li>
+      <li>
+        <img src="img/floorplans/Southern Oaks - 3.jpg" alt="4 Bedroom/2 Bathroom (1700 sq ft. Townhome)">
+      </li>
+      <li>
+        <img src="img/floorplans/Southern Oaks - 4.jpg" alt="5 Bedroom/2 Bathroom (1850 sq ft. Townhome)">
+      </li>
+    </ul>
   </div>
 
 </div>
@@ -95,4 +91,8 @@ var opts = {
   }
 };
 makeBSS('.bss-slides', opts);
+
+$(document).ready(function() {
+  $('.pgwSlider').pgwSlider();
+});
 </script>

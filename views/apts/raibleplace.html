@@ -58,18 +58,19 @@
 <!-- MAYBE TRY A TABLE HERE -->
   <div class="floorplans">
     <div class="row">
-      <img src="img/floorplans/Raible Place - 1.jpg">
-      <br>
-      <p><b>1 Bedroom / 1 Bathroom</b> - 653 sq ft.</p>
-      <img src="img/floorplans/Raible Place - 2.jpg">
-      <br>
-      <p><b>2 Bedroom / 2 Bathroom</b> - 853 sq ft.</p>
+      <ul class="pgwSlider">
+        <li>
+          <img src="img/floorplans/Raible Place - 1.jpg" alt="1 Bedroom/1 Bathroom (653 sq ft.)">
+        </li>
+        <li>
+          <img src="img/floorplans/Raible Place - 2.jpg" alt="2 Bedroom/2 Bathroom (853 sq ft.)">
+        </li>
+        <li>
+          <img src="img/floorplans/Raible Place - 3.jpg" alt="3 Bedroom/2 Bathroom (1032 sq ft.)">
+        </li>
+      </ul>
     </div>
-    <div class="row">
-      <img src="img/floorplans/Raible Place - 3.jpg">
-      <br>
-      <p><b>3 Bedroom / 2 Bathroom</b> - 1032 sq ft.</p>
-    </div>
+
     <br><br><br><br>
   </div>
 </div>
@@ -86,4 +87,8 @@ var opts = {
   }
 };
 makeBSS('.bss-slides', opts);
+
+$(document).ready(function() {
+  $('.pgwSlider').pgwSlider();
+});
 </script>

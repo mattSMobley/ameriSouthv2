@@ -61,24 +61,20 @@
 <h1> Floorplans </h1>
 <div class="floorplans">
   <div class="row">
-    <img src="img/floorplans/Springdale Estates - 1.jpg">
-    <br>
-    <p><b>2 Bedroom / 1.5 Bathroom</b> - 1058 sq ft. townhome</p>
-  </div>
-  <div class="row">
-    <img src="img/floorplans/Springdale Estates - 2.jpg">
-    <br>
-    <p><b>2 Bedroom / 2 Bathroom</b> - 941 sq ft.</p>
-  </div>
-  <div class="row">
-    <img src="img/floorplans/Springdale Estates - 3.jpg">
-    <br>
-    <p><b>3 Bedroom / 2.5 Bathroom</b> - 1262 sq ft. townhome</p>
-  </div>
-  <div class="row">
-    <img src="img/floorplans/Springdale Estates - 4.jpg">
-    <br>
-    <p><b>3 Bedroom / 2 Bathroom</b> - 1064 sq ft.</p>
+    <ul class="pgwSlider">
+      <li>
+        <img src="img/floorplans/Springdale Estates - 1.jpg" alt="2 Bedroom/1.5 Bathroom (1058 sq ft.)">
+      </li>
+      <li>
+        <img src="img/floorplans/Springdale Estates - 2.jpg" alt="2 Bedroom/2 Bathroom (941 sq ft.)">
+      </li>
+      <li>
+        <img src="img/floorplans/Springdale Estates - 3.jpg" alt="3 Bedroom/2.5 Bathroom (1262 sq ft. Townhome)">
+      </li>
+      <li>
+        <img src="img/floorplans/Springdale Estates - 4.jpg" alt="3 Bedroom/2 Bathroom (1064 sq ft.)">
+      </li>
+    </ul>
   </div>
 
 </div>
@@ -95,4 +91,8 @@ var opts = {
   }
 };
 makeBSS('.bss-slides', opts);
+
+$(document).ready(function() {
+  $('.pgwSlider').pgwSlider();
+});
 </script>
