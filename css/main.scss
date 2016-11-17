@@ -96,14 +96,14 @@ main {
   color: $primary;
   p {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: $primary;
-    padding: 1em 8em 0em 8em;
+    padding: 1em 5em 0em 5em;
   }
   h3 {
     text-align: center;
     margin-top: 1em;
-    color: #bbb;
+    color: #888;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -207,6 +207,7 @@ main {
   width: 83%;
   background-color: lighten($accent, 40%);
   box-shadow: $box-shadow-light;
+  padding: 4em 0em 6em 0em;
   img {
     height: 10em;
     margin: 2%;
@@ -226,6 +227,7 @@ main {
   width: 83%;
   background-color: lighten($secondary, 70%);
   box-shadow: $box-shadow-light;
+  padding: 4em 0em 6em 0em;
   img {
     height: 10em;
     margin: 2%;
@@ -249,6 +251,7 @@ main {
 }
 .cd-color-gray {
   background-color: $base;
+  padding-bottom: 6em;
   img {
     width: 80%;
     height: auto;
@@ -933,8 +936,12 @@ footer {
   }
 }
 .apt-floorplans {
-  width: 80%;
+  width: 70%;
   display: inline-block;
+}
+.floorplans {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .third {
   padding-top: 3em;
@@ -1106,6 +1113,9 @@ footer {
     width: 60%;
     padding: 1em 2em;
   }
+  .bss-slides figure img {
+    height: 35em;
+  }
 }
 @media only screen and (max-width: 1038px) {
   [class*='box-'] {
@@ -1115,6 +1125,12 @@ footer {
     width: 65%;
     padding: 1em 2em;
   }
+  .bss-slides figure img {
+    height: 32.5em;
+  }
+  .apt-info p {
+    font-size: 1.5em;
+  }
 }
 @media only screen and (max-width: 905px) {
   [class*='box-'] {
@@ -1122,10 +1138,14 @@ footer {
   }
   .comment p {
     padding: 1em 3em;
+    font-size: 1.8em;
   }
   .filter-area {
     width: 60%;
     padding: 1em 2em;
+  }
+  .bss-slides figure img {
+    height: 30em;
   }
 }
 @media only screen and (max-width: 804px) {
@@ -1139,7 +1159,7 @@ footer {
   }
   .comment p {
     padding: 1em 2em;
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .filter-area {
     width: 60%;
@@ -1153,10 +1173,16 @@ footer {
   nav ul li {
     text-align: center;
   }
+  .bss-slides figure img {
+    height: 27em;
+  }
 }
 @media only screen and (max-width: 767px) {
   nav {
     padding: 0;
+  }
+  .bss-slides figure img {
+    height: 26em;
   }
 }
 @media only screen and (max-width: 705px) {
@@ -1166,6 +1192,13 @@ footer {
     margin-right: 5px;
     margin-left: 5px;
   }
+  .bss-slides figure img {
+    height: 25em;
+  }
+  .apt-info p {
+    font-size: 1.2em;
+    padding-top: 1em;
+  }
 }
 @media only screen and (max-width: 624px) {
   [class*='box-'] {
@@ -1174,14 +1207,33 @@ footer {
     margin-right: 5px;
     margin-left: 5px;
   }
+  .cd-color-yellow{
+    padding-bottom: 0em;
+    h1 {
+    font-size: 2.5em;
+    }
+  }
+  .apt-name {
+    font-size: 2.5em;
+  }
+  .apt-info p {
+    font-size: 1.1em;
+  }
+  .cd-color-purple h1 {
+    font-size: 2.5em;
+  }
   .comment p {
     padding: 1em;
+    font-size: 1.5em;
   }
   .filter-area {
     width: 60%;
     .checkSorts {
       padding: 1em;
     }
+  }
+  .bss-slides figure img {
+    height: 22em;
   }
 }
 @media only screen and (max-width: 545px) {
@@ -1191,8 +1243,15 @@ footer {
     margin-right: 5px;
     margin-left: 5px;
   }
+  .column-5 {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
   .main-boxes {
     padding: 0;
+  }
+  .apt-info p {
+    font-size: 1.0em;
   }
   .filter-area {
     width: 70%;
@@ -1200,6 +1259,9 @@ footer {
       margin-left: 1.5em;
       margin-right: 1em;
     }
+  }
+  .bss-slides figure img {
+    height: 20em;
   }
 }
 @media only screen and (max-width: 505px) {
@@ -1214,7 +1276,7 @@ footer {
     }
   }
   .comment {
-    padding-bottom: 0;
+    padding: 20px 20px 0px 20px;
   }
   .cd-fixed-bg.cd-bg-1 {
     background-attachment: scroll;
@@ -1223,6 +1285,9 @@ footer {
   .cd-fixed-bg.cd-bg-2 {
     background-attachment: scroll;
     -webkit-background-size: cover;
+  }
+  .bss-slides figure img {
+    height: 17em;
   }
 
 }
@@ -1242,6 +1307,9 @@ footer {
   }
   .comment {
     padding-bottom: 0;
+  }
+  .bss-slides figure img {
+    height: 15em;
   }
 }
 /************ CSS3 ANIMATIONS ************/
