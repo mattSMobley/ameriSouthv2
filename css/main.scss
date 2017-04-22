@@ -718,15 +718,21 @@ nav ul li:hover {
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
-
 @media only screen and (max-width: 791px) {
+  .mobile-toggle {
+    // display: block;
+    padding-top: .25em;
+  }
+  .initial nav {
+    padding-top: 0em;
+  }
+}
+@media only screen and (max-width: 767px) {
   .mobile-toggle {
     display: block;
     padding-top: .25em;
   }
-  .initial nav ul {
-    display: none;
-  }
+
 
 }
 .mobile-toggle span {
