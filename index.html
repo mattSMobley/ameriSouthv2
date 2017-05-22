@@ -8,7 +8,7 @@
 
   <title>AmeriSouth Realty</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Gill+Sans|Pinyon+Script|Libre+Baskerville' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pinyon+Script|Libre+Baskerville' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" href="./css/main.css"> -->
   <link rel="stylesheet" href="./css/simple-slideshow-styles.css">
@@ -127,6 +127,23 @@
 
     $('nav ul').mouseleave(function () {
       $('.sub-menu-about').hide();
+    });
+
+    //news article toggles
+    $('#videos-toggle').click(function() {
+      console.log('dookie');
+      if ($('#videos:hidden').length == 0) {
+        $('#videos').show();
+        $('#articles').hide();
+      };
+    });
+
+    $('#articles-toggle').click(function() {
+      console.log('dookie');
+      if ($('#articles:hidden').length == 0) {
+        $('#articles').show();
+        $('#videos').hide();
+      };
     });
 
     // mobile nav
